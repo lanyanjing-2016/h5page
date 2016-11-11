@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html class="js-no-overflow-scrolling">
+<head lang="en" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,minimal-ui">
+    <title>test</title>
+    <link rel="stylesheet" type="text/css" href="H5FullscreenPage.css"/>
+    <!-- H5FullscreenPage.js 实现手机h5页面整屏幕滑动-->
+    <style>
+        html, body {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            font-family: arial;
+            text-align: center;
+        }
+        * {
+            margin:0;
+            padding: 0;
+        }
+        .item{
+            background-color: red;
+            position:absolute;
+            width:100%;height: 100%;
+            top:0;
+            left:0;
+            text-align: center;
+            overflow:hidden;
+        }
+        .item img{width: 100%;height: 100%;}
+    </style>
+</head>
+<body class="H5FullscreenPage">
+<div class="H5FullscreenPage-wrap">
+    <div class="item">
+        <img src="image/1.jpg"/>
+    </div>
+    <div class="item">
+        <img src="image/2.jpg"/>
+    </div>
+    <div class="item">
+        <img src="image/3.jpg"/>
+    </div>
+    <div class="item">
+        <img src="image/4.jpg"/>
+    </div>
+    <div class="item">
+        <img src="image/10.jpg"/>
+    </div>
+</div>
+<script src="http://cdn.bootcss.com/zepto/1.0rc1/zepto.min.js"></script>
+<script type="text/javascript" src="H5FullscreenPage.js"></script>
+<script type="text/javascript">
+    H5FullscreenPage.init({
+        'type':2,
+        'pageShow' : function(dom){},
+        'pageHide' : function(dom){}
+    });
+</script>
+</body>
+</html>
